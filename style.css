@@ -1,6 +1,8 @@
 .jil {
     color: white;
     background-color: red;
+    border: 1px solid red;
+    border-radius: 30px;
 }
 
 * {
