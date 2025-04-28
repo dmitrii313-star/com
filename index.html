@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <title>Form</title>
+</head>
+<body>
+    
+    <section class="contacts">
+
+        <h2 class="heading"><span>Оформить</span> Услугу</h2>
+
+        <div class="row">
+
+            <div class="img">
+                <img src="img/contacts-img.png" alt="">
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="3ce30761-1de9-46b7-93fa-b9d41c0ad3eb">
+
+                <span>Ваше имя</span>
+                <input type="text" name="name" id="" class="box" required
+                placeholder="Введите ваше имя..." autocomplete="off">
+
+                <span>Введите адрес электронной почты</span>
+                <input type="email" name="email" id="" class="box" required
+                placeholder="Введите свой адрес электронной почты..." autocomplete="off">
+
+                <span>Ваш номер</span>
+                <input type="number" name="number" id="" class="box" required
+                placeholder="Введите ваш номер..." autocomplete="off">
+
+                <span>Услуги</span>
+                <select name="cources" id="" class="box" required>
+                    <option value="" disabled selected>Выберите услугу</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                </select>
+
+                <span>Выберите пол</span>
+                <div class="gender">
+                    <input type="radio" name="gender" id="male"
+                    value="malу">
+                    <label for="male">мужской</label>
+
+                    <input type="radio" name="gender" id="female"
+                    value="female">
+                    <label for="female">женский</label>
+                </div>
+
+                <input type="submit" value="Отправить данные" class="btn"
+                name="send">
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
